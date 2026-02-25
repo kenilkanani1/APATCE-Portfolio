@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-silver text-slate-900 antialiased;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: linear-gradient(#f2f5f7, #f2f5f7) padding-box,
+    linear-gradient(120deg, #3BA3FA, #5AF3E6, #3BA3FA) border-box;
+  border: 2px solid transparent;
+}
+
+.cyber-grid {
+  background-image: linear-gradient(rgba(59, 163, 250, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 163, 250, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
